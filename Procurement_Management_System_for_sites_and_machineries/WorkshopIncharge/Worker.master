@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Worker.master.cs" Inherits="Worker" %>
+
+<html>
+<head>
+<title>Workshop Incharge Panel: T K ENGGINEERING</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Real Site Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<link rel='stylesheet' href='../assets/css/front.css' type='text/css' media='all'/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css" media='all'>
+<link rel='stylesheet' href='../assets/css/animate.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='../assets/css/flexslider.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='../assets/css/style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='../assets/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C300%2C400%2C700%2C800%2C900%7CShadows+Into+Light&amp;ver=4.5.3' type='text/css' media='all'/>
+</head>
+<body>
+<div class="page-loader">
+	<img src="../assets/img/loader.gif" alt="loader">
+</div>
+<form id="Form1" runat="server">
+<!-- Header
+================================================== -->
+<header id="header">
+	<div class="container">
+		<div class="logoarea">
+			<div class="col-md-4">
+				<a class="navbar-brand" href="index.html">
+				<img src="../assets/img/logo.png" alt="logo">
+				</a>
+			</div>
+			<div class="col-md-6 text-right">
+				<div class="headMiddInfo">
+					<div class="">
+						<div class="singMiddInfo phone">
+							<h1 style="font-weight: bold;">TK ENGG <small><span class="accentcolor" style="color: white;">HEAD OFFICE</span></small></h1>
+						</div>
+					</div>
+					<div class="clearfix">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mega-menu" class="header header-sticky primary-menu icons-no default-skin fadeIn">
+		<nav class="navbar navbar-default redq">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<a class="mobile-menu-close"><i class="fa fa-close"></i></a>
+				<div class="menu-top-menu-container">
+					<ul id="menu-top-menu" class="nav navbar-nav nav-list">
+						<li class="current-menu-item active"><a href="Default.aspx">Dashboard</a></li>
+						<li class="dropdown"><a title="Master" href="#" data-hover="dropdown" class="dropdown-toggle">Daily Entries <span class="caret"></span></a>
+							<ul role="menu" class=" sub-menu">
+								<li><a href="CurrentStock.aspx">Current Stock</a></li>
+								<li><a href="WorkshopItemsTransactions.aspx">Workshop Item Stock</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a title="Daily Entries" href="#" data-hover="dropdown" class="dropdown-toggle">Task & Notifications<span class="caret"></span></a>
+							<ul role="menu" class=" sub-menu">
+								<li><a href="MachineDamage.aspx">Machine Damage</a></li>
+								<li><a href="MachineryPapers.aspx">Machine Policies</a></li>
+								<li><a href="Projects.aspx">Projects</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a title="Tash & Notification" href="#" data-hover="dropdown" class="dropdown-toggle">Order & Management<span class="caret"></span></a>
+							<ul role="menu" class=" sub-menu">
+								<li><a href="WorkshopItems.aspx">Workshop Items<</a></li>
+								<li><a href="CreateIndent.aspx">Create Indent</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a title="Order & Management" href="#" data-hover="dropdown" class="dropdown-toggle">Reports<span class="caret"></span></a>
+							<ul role="menu" class=" sub-menu">
+								<li><a href="RenewalAlerts.aspx">Renewals</a></li>
+								<li><a href="CurrentStock.aspx">Current Stock</a></li>
+								<li><a href="Indent.aspx">View Indents</a></li>
+								<li><a href="IssueReport.aspx">Issue Slip Report</a></li>
+								<li><a href="MachineDamageReport.aspx">Breakdown Report</a></li>
+                                <li><a href="MachineHistory.aspx">Machine History</a></li>
+								<li><a href="PartTransferData.aspx">Part Transfer Reports</a></li>
+							</ul>
+						</li>
+                        <li class="highlight dropdown"><a href="#" data-hover="dropdown" class="dropdown-toggle"><asp:Label ID="lblAdminName" runat="server">Hello</asp:Label>(<asp:Label ID="lblSiteName" runat="server">Hello</asp:Label>)</a>
+							<ul role="menu" class=" sub-menu" style="left: 0;">
+								<li><a href="UserProfile.aspx">Your Profile</a></li>
+								<li><a href="ChangePassword.aspx">Change Password</a></li>
+								<li><asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" Text="Log Out" CssClass="btn btn-info"></asp:LinkButton></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+		</nav>
+	</div>
+</header>
+<asp:ContentPlaceHolder ID="CHPHeader" runat="server"></asp:ContentPlaceHolder>
+<asp:ContentPlaceHolder ID="CPH1" runat="server"></asp:ContentPlaceHolder>
+</form>
+<footer id="footer" class="footer2">
+	<div class="scrolltop">
+		<div class="scroll icon">
+			<a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+		</div>
+	</div>
+	<div class="copyright sep-top-xs sep-bottom-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<small>
+					&copy;T.K. Engineering Consortium Pvt. Ltd. </small>
+				</div>
+				<div class="col-md-6 text-right">
+                    Design &amp; Developed by <a href="http://www.24techsoft.com" target="blank">24 Tech Soft</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- =========================== FOOTER END  =========================== -->
+
+<!-- =========================== SCRIPTS BEGIN  =========================== -->
+<script type='text/javascript' src='../assets/js/jquery.js'></script>
+<script type='text/javascript' src='../assets/js/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='../assets/js/carousel.min.js'></script>
+<script type='text/javascript' src='../assets/js/modernizr-2.8.3.min.js'></script>
+<script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='../assets/js/mason.js'></script>
+<script type='text/javascript' src='../assets/js/popup.js'></script>
+<script type='text/javascript' src='../assets/js/common.js'></script>
+<script type='text/javascript' src='../assets/js/flexslider.js'></script>
+<script type='text/javascript' src='../assets/js/portfolio.js'></script>
+<script type='text/javascript' src='../assets/js/countto.js'></script>
+<script type='text/javascript' src='../assets/js/testimonial.js'></script>
+<!-- =========================== SCRIPTS END  =========================== -->
+</body>
+</html>

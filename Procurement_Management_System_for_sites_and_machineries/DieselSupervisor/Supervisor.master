@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Supervisor.master.cs" Inherits="Supervisor" %>
+
+<html>
+<head>
+<title>Diesel Supervisor Panel: T K ENGGINEERING</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Real Site Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/iconeffects.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui1.css">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!--animate-->
+<link href="../css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="../js/wow.min.js"></script>
+	<script>
+	    new WOW().init();
+	</script>
+<!--//end-animate-->
+<link href='//fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+<body>
+<form id="from" runat="server">
+
+<!-- header -->
+	<div class="head_top wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+		<div class="container">
+			<div class="banner-right">
+            <h2><asp:Label ID="lblAdminName" runat="server">Hello</asp:Label></h2>
+            <a href="UserProfile.aspx" style="text-decoration:none;" class="btn btn-danger">User Profile</a>
+       <a href="ChangePassword.aspx" class="btn btn-danger" >ChangePassword</a>
+      <asp:LinkButton ID="LinkButton1" runat="server" OnClick="lnkLogout_Click" Text="Log Out" CssClass="btn btn-danger"></asp:LinkButton>
+      <br /><h4><asp:Label ID="lblSiteName" runat="server"></asp:Label></h4>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+<div class="header w3ls wow bounceInUp" data-wow-duration="1s" data-wow-delay="0s">
+	<div class="container">
+						<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header logo">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<h1>
+									<a class="navbar-brand link link--yaku" href="Default.aspx"><img src="../images/logo1.png" alt="TK ENGG" width="100%" /></a>
+								</h1>
+								
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+								<nav class="cl-effect-1">
+									<ul class="nav navbar-nav ">
+										<li><a class="hvr-overline-from-center" href="Default.aspx">Dashboard</a></li>
+                                        <li><a class="hvr-overline-from-center" href="AddTodaysUsage.aspx">Daily Progress Entry</a></li>
+                                                <li><a class="hvr-overline-from-center" href="MachineryUsageStatement.aspx">Daily Progress Report</a></li>
+                                                
+
+									</ul>
+								</nav>
+							</div><!-- /navbar-collapse -->
+						</nav>
+	</div>
+</div>
+<asp:ContentPlaceHolder ID="CHPHeader" runat="server"></asp:ContentPlaceHolder>
+<div class="contact wthree all_pad">
+<div class="container" style="min-height:400px;">
+<asp:ContentPlaceHolder ID="CPH1" runat="server"></asp:ContentPlaceHolder>
+
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="footer w3agile">
+	<div class="container">
+		<!-- <div class="foo-arr text-center"><img src="images/arrows.png" alt=" "/></div> -->
+		<div class="col-md-4 footer-left">
+			<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><p>T.K. Engineering Consortium Pvt. Ltd.<span>Model Village, Papum Pare, Naharlagun</span></p>
+		</div>
+		
+		<div class="clearfix"></div>
+		<div class="copyrights w3">
+			<div class="copy-left">
+				<p>&copy; T. K. Engineering, All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> | Developed By <a href="www.24techsoft.com">24 Tech Soft</a></p>
+			</div>
+			<div class="copy-right agileinfo">
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+	    });
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</form>
+<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
+</body>
+</html>
